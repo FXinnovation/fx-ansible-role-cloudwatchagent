@@ -1,0 +1,6 @@
+---
+
+- name: 'Install Cloudwatch Agent'
+  package:
+      state: 'present'
+      name: 'https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm'

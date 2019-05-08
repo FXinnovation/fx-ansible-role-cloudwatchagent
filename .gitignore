@@ -1,3 +1,2 @@
-# ---> Ansible
-*.retry
-
+.kitchen
+*_inspec.xml
