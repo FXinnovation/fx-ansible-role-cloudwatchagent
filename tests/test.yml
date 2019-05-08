@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
-  remote_user: root
+- hosts: 'localhost'
+  remote_user: 'root'
   roles:
-    - "ansible-role-cloudwatchagent"
+    - 'ansible-role-cloudwatchagent'
