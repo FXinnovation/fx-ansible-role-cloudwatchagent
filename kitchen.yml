@@ -80,7 +80,7 @@ suites:
     verifier:
       inspec_tests:
         - name: local
-          path: test/integration/default/rhel.rb
+          path: test/integration/default/
   - name: "centos"
     includes:
       - "centos-7"
@@ -90,7 +90,7 @@ suites:
     verifier:
       inspec_tests:
         - name: local
-          path: test/integration/default/centos.rb
+          path: test/integration/default/
   - name: "amazon"
     includes:
       - "amazon2-2019"
@@ -100,4 +100,4 @@ suites:
     verifier:
       inspec_tests:
         - name: local
-          path: test/integration/default/amazon.rb
+          path: test/integration/default/
