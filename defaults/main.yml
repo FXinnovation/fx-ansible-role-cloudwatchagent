@@ -2,7 +2,7 @@
 # defaults file for ansible-role-cloudwatchagent
 
 cwa_enable: True
-cwa_start:  omit
+cwa_start:  False
 cwa_url_amazon: 'https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm'
 cwa_url_centos: 'https://s3.amazonaws.com/amazoncloudwatch-agent/centos/amd64/latest/amazon-cloudwatch-agent.rpm'
 cwa_url_rhel:   'https://s3.amazonaws.com/amazoncloudwatch-agent/redhat/amd64/latest/amazon-cloudwatch-agent.rpm'
