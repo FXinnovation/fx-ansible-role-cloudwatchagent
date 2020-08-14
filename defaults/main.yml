@@ -3,3 +3,7 @@
 
 cwa_enable: True
 cwa_start:  omit
+cwa_configd_path:  '/opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.d/'
+cwa_configd_owner: 'root'
+cwa_configd_group: 'root'
+cwa_configd_list:  []
