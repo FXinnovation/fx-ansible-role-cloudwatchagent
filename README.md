@@ -17,6 +17,9 @@ N/A
 |---|---|
 | cwa_enable | Should this role enable the service |
 | cwa_start | Should this role start the service |
+| cwa_url_amazon | URL of the RPM for Amazon |
+| cwa_url_centos | URL of the RPM for CentOS |
+| cwa_url_rhel | URL of the RPM for RHEL |
 | cwa_configd_list | List of files to copy in the configuration directory |
 
 ## Dependencies

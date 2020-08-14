@@ -3,4 +3,4 @@
 - name: 'Install Cloudwatch Agent'
   package:
       state: 'present'
-      name: 'https://s3.amazonaws.com/amazoncloudwatch-agent/centos/amd64/latest/amazon-cloudwatch-agent.rpm'
+      name: "{{ cwa_url_centos }}"
