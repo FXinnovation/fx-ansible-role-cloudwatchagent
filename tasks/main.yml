@@ -13,4 +13,5 @@
 - name: 'Enable Amazon CloudWatch Agent'
   service:
       name: 'amazon-cloudwatch-agent'
-      enabled: true
+      enabled: "{{ cwa_enable }}"
+      state: "{{ 'started' if cwa_start == True else omit }}"

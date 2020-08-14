@@ -1,2 +1,5 @@
 ---
 # defaults file for ansible-role-cloudwatchagent
+
+cwa_enable: True
+cwa_start:  omit
