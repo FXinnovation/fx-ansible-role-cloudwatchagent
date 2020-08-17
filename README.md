@@ -2,7 +2,7 @@
 
 Install AWS Cloudwatch Agent for CentOS / RHEL / Amazon Linux 2.
 
-Notes:
+## Limitations
 
 - By default this role doesn't automatically start the service, you can configure that with the variable `cwa_start`.
 - This role doesn't manage changes on the configuration
