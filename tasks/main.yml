@@ -10,7 +10,17 @@
 - include_tasks: amazon.yml
   when: ansible_distribution == 'Amazon'
 
+- name: 'Push configuration files'
+  copy:
+    src:   "{{ item }}"
+    dest:  "{{ cwa_configd_path }}"
+    owner: "{{ cwa_configd_group }}"
+    group: "{{ cwa_configd_owner }}"
+    mode:  0660
+  loop: "{{ cwa_configd_list }}"
+
 - name: 'Enable Amazon CloudWatch Agent'
   service:
       name: 'amazon-cloudwatch-agent'
-      enabled: true
+      enabled: "{{ cwa_enable }}"
+      state: "{{ 'started' if cwa_start else omit }}"
